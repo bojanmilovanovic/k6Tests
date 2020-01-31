@@ -7,7 +7,7 @@ let urlBase = "http://dbh-brokerage.mdb-master-lat.k8s-core.ebs.crealogix.net";
 const tokenBuilder = new AuthTestToken("http://test-token.mdb-master-dev.k8s-core.ebs.crealogix.net/test-token");
 
 export const options = {
-	vus: 3,
+	vus: 7,
 	duration: "6s"
 };
 
@@ -26,7 +26,5 @@ export default function() {
 
 	for (var i = 0; i < tokens.length; i++) {
 		tokenBuilder.removeToken(tokens[i])
-	};
-	
+	};	
 };
-//avs
