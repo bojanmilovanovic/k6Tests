@@ -1,4 +1,4 @@
-import AuthTestToken from "../libraries/AuthTestToken.js";
+import AuthTestToken from "../../libraries/AuthTestToken.js";
 import { check } from "k6";
 import http from 'k6/http';
 import { Trend, Rate, Counter, Gauge } from "k6/metrics";
