@@ -4,11 +4,14 @@ import { check, fail } from "k6";
 import http from 'k6/http';
 
 let urlBase = "http://dbh-brokerage.mdb-master-lat.k8s-core.ebs.crealogix.net";
-const tokenBuilder = new AuthTestToken("http://test-token.mdb-master-dev.k8s-core.ebs.crealogix.net/test-token");
+const tokenBuilder = new AuthTestToken();
 
 export const options = {
-	vus: 3,
-	duration: "6s"
+		stages: [
+	    { duration: "3s", target: 3 },
+	    { duration: "5s", target: 6 },
+	    { duration: "3s", target: 3 }
+	  ]
 };
 
 export default function() {	

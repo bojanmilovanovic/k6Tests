@@ -1,1 +1,1 @@
-k6 run tests/brokerage/GetOrders.js & k6 run tests/documents/(WIP)GetDocuments.js
+k6 run tests/brokerage/GetOrders.js; k6 run tests/assets/(WIP)GetAllAccounts.js
