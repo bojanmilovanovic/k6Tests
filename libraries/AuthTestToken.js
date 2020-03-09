@@ -1,11 +1,13 @@
 import http from "k6/http";
 import papaparse from "../libraries/papaparse.js";
 
-
-const url	 			= "http://test-token.mdb-master-dev.k8s-core.ebs.crealogix.net/test-token";
-const tokenFile = JSON.parse(open("MDBk8sTestToken.json"));
-const tokenBody = JSON.stringify(tokenFile);
-const csvData 	= papaparse.parse(open("users.csv"), {header: true});
+const environment   = JSON.parse(open("../environments/environments.json")).activeEnv;
+const url           = JSON.parse(open("../environments/"+environment)).tokenURL;
+const tokenFile     = JSON.parse(open("../environments/"+environment)).tokenBody;
+const tokenFileOpen = JSON.parse(open("../environments/"+tokenFile));
+const tokenBody     = JSON.stringify(tokenFileOpen);
+const contractsFile = JSON.parse(open("../environments/"+environment)).contracts;
+const csvData 	    = papaparse.parse(open("../environments/"+contractsFile), {header: true});
 
 export default class AuthTestToken{	
 		
