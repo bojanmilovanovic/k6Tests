@@ -1,5 +1,4 @@
 import AuthTestToken from "../../libraries/AuthTestToken.js";
-import papaparse from "../../libraries/papaparse.js";
 import { check, fail } from "k6";
 import http from 'k6/http';
 

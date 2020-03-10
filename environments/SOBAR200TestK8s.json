@@ -5,5 +5,5 @@
     "tenandID": "2",
     "baseAssetURL": "http://soba-r200-test.dbh-k8s.crealogix.net/assets",
     "basePaymentsURL": "http://soba-r200-test.dbh-k8s.crealogix.net/banking-api/payments",
-    "baseBrokerageURL": "http://soba-r200-test.dbh-k8s.crealogix.net/brokerage"
+    "baseBrokerageURL": "http://soba-r200-test.dbh-k8s.crealogix.net"
 }

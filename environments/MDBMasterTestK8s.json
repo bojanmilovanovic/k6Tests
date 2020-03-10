@@ -1,10 +1,10 @@
 {
-    "tokenURL": "http://test-token.mdb-master-test.k8s-core.ebs.crealogix.net/test-token",
+    "tokenURL": "http://test-token.mdb-master-dev.k8s-core.ebs.crealogix.net/test-token",
     "tokenBody": "MDBMasterTestK8sToken.json",
     "contracts": "MDBMasterTestK8sUsers.csv",
     "tenandID": "19901",
-    "baseAssetURL": "http://dbh-assets.mdb-master-test.k8s-core.ebs.crealogix.net/",
+    "baseAssetURL": "http://dbh-assets.mdb-master-test.k8s-core.ebs.crealogix.net",
     "basePaymentsURL": "http://banking-api.mdb-master-test.k8s-core.ebs.crealogix.net/banking-api/payments",
-    "baseBrokerageURL": "http://dbh-brokerage.mdb-master-test.k8s-core.ebs.crealogix.net/",
-    "baseSecureMailURL": "http://dbh-securemail.mdb-master-test.k8s-core.ebs.crealogix.net/"
+    "baseBrokerageURL": "http://dbh-brokerage.mdb-master-test.k8s-core.ebs.crealogix.net",
+    "baseSecureMailURL": "http://dbh-securemail.mdb-master-test.k8s-core.ebs.crealogix.net"
 }

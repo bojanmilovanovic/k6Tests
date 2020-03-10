@@ -1,5 +1,4 @@
 import AuthTestToken from "../../libraries/AuthTestToken.js";
-import papaparse from "../../libraries/papaparse.js";
 import { check, fail } from "k6";
 import http from 'k6/http';
 
@@ -9,9 +8,8 @@ const tenantID    = JSON.parse(open("../../environments/"+environment)).tenandID
 const tokenBuilder = new AuthTestToken();
 
 export const options = {
-		stages: [
-	    { duration: "2s", target: 3 }
-	  ]
+	vus: 3,
+	duration: "5s"
 };
 
 export default function() {	
@@ -19,14 +17,13 @@ export default function() {
 	let URL 	= urlBase+"/brokerage/orders/"+tenantID+"/v1/orders";
 	let res = http.get(URL, {
 		headers: {"Authorization": "Bearer "+tokens[__VU],
-				  "Accept": "application/hal+json",
-				  "Content-Type": "application/json"},
+				  "Accept": "application/json, application/hal+json",
+				  "Content-Type": "application/json; charset=UTF-8"},
 	});
 	let status = res.status;
 	check(res, {
 		"Status is 200": r => r.status === 200
 	});
-
 	for (var i = 0; i < tokens.length; i++) {
 		tokenBuilder.removeToken(tokens[i])
 	};	
