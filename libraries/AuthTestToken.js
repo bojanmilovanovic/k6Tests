@@ -1,7 +1,7 @@
 import http from "k6/http";
 import papaparse from "../libraries/papaparse.js";
+import {environment} from "../environments/Environments.js";
 
-const environment   = JSON.parse(open("../environments/environments.json")).activeEnv;
 const url           = JSON.parse(open("../environments/"+environment)).tokenURL;
 const tokenBodyFile     = JSON.parse(open("../environments/"+environment)).tokenBody;
 const tokenBodyFileJSON = JSON.parse(open("../environments/"+tokenBodyFile));

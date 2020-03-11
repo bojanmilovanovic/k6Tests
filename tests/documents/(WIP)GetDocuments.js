@@ -1,6 +1,7 @@
 import AuthTestToken from "../../libraries/AuthTestToken.js";
 import { check, fail } from "k6";
 import http from 'k6/http';
+import {environment} from "../../environments/environments.js";
 
 let urlBase = "http://dbh-documents.mdb-master-lat.k8s-core.ebs.crealogix.net";
 const tokenBuilder = new AuthTestToken("http://test-token.mdb-master-dev.k8s-core.ebs.crealogix.net/test-token");
