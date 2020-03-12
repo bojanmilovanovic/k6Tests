@@ -9,13 +9,8 @@ const tenantID    = JSON.parse(open("../../environments/"+environment)).tenandID
 const tokenBuilder = new AuthTestToken();
 
 export const options = {
-<<<<<<< HEAD
 	vus: 50,
 	duration: "60s"
-=======
-	vus: 1,
-	duration: "5s"
->>>>>>> 38d66bacff7ef5c54f5496200635c81496a6038f
 };
 
 export default function() {	
