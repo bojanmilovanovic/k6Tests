@@ -1,0 +1,13 @@
+{
+    "pageRequest": {
+    "page": 0,
+    "size": 10
+    },
+    "paymentFilter": {
+        "paymentType":"SWIFT_INTERNATIONAL"
+    },
+    "orderBy": {
+        "field": "CREATION_DATE",
+        "sortOrder": "DESC"
+    }
+}
