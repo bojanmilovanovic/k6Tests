@@ -1,15 +1,21 @@
 import AuthTestToken from "../../libraries/AuthTestToken.js";
 import { check, fail } from "k6";
 import http from 'k6/http';
+import {environment} from "../../environments/Environments.js";
 
-const environment = JSON.parse(open("../../environments/environments.json")).activeEnv;
+console.log(environment);
 const urlBase  	  = JSON.parse(open("../../environments/"+environment)).baseBrokerageURL;
 const tenantID    = JSON.parse(open("../../environments/"+environment)).tenandID;
 const tokenBuilder = new AuthTestToken();
 
 export const options = {
+<<<<<<< HEAD
 	vus: 50,
 	duration: "60s"
+=======
+	vus: 1,
+	duration: "5s"
+>>>>>>> 38d66bacff7ef5c54f5496200635c81496a6038f
 };
 
 export default function() {	
@@ -20,7 +26,7 @@ export default function() {
 				  "Accept": "application/json, application/hal+json",
 				  "Content-Type": "application/json; charset=UTF-8"},
 	});
-	let status = res.status;
+//	let status = res.status;
 	check(res, {
 		"Status is 200": r => r.status === 200
 	});

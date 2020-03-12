@@ -2,8 +2,9 @@ import AuthTestToken from "../../libraries/AuthTestToken.js";
 import { check } from "k6";
 import http from 'k6/http';
 import { Trend, Rate, Counter, Gauge } from "k6/metrics";
+import {environment} from "../../environments/Environments.js";
 
-const environment = JSON.parse(open("../../environments/environments.json")).activeEnv;
+
 const urlBase  	  = JSON.parse(open("../../environments/"+environment)).baseAssetURL;
 const tenantID    = JSON.parse(open("../../environments/"+environment)).tenandID;
 const tokenBuilder = new AuthTestToken();
