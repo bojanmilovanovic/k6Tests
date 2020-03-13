@@ -1,0 +1,46 @@
+{
+    "storeOnly": false,
+    "locked": false,
+    "categoryPurposeCode": "SALA",
+    "paymentInformation": {
+        "endToEndId": "amet-soluta-vel",
+        "instructedAmount": {
+            "currency": {
+                "code": "GBP"
+            },
+            "value": 1.00
+        },
+        "remittanceInformation": {
+            "unstructured": "9f9bdaa6-0342-4166-90bb-bcb99c8076fa",
+            "structured": "RF64186397856221845279566"
+        },
+        "instructionIdentification": "1FMKP7QO6WAVA88ZJE1OBGZFSZMW6IX",
+        "requestedExecutionDate": "execdate",
+        "instructionPriority": "NORMAL",
+        "creditor": {
+            "name": "Heber Legros",
+            "address": {
+                "adrLine1": "Preston Stream",
+                "adrLine2": "5367 Kessler Spurs",
+                "streetName": "Haag Track",
+                "buildingNm": "793",
+                "postalCode": 805,
+                "townName": "Port Wallace",
+                "country": "BG"
+            }
+        },
+        "creditorAccountNo": "GB75NWBK56000379360009",
+        "creditorAgent": {
+            "bic": "NWBKGB2LXXX"
+        },
+        "debtor": {
+            "name": "Freddy Hinz",
+            "address": {
+                "streetName": "Schachenallee 31",
+                "postalCode": "5004",
+                "townName": "Aarau"
+            }
+        },
+        "debtorAccountNo": "CH9999999999"
+    }
+}

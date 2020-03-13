@@ -4,7 +4,7 @@
     "contracts": "MDBMasterTestK8sUsers.csv",
     "tenandID": "19901",
     "baseAssetURL": "http://dbh-assets.mdb-master-test.k8s-core.ebs.crealogix.net",
-    "basePaymentsURL": "http://banking-api.mdb-master-test.k8s-core.ebs.crealogix.net/banking-api/payments",
+    "basePaymentsURL": "http://banking-api.mdb-master-test.k8s-core.ebs.crealogix.net/banking-api",
     "baseBrokerageURL": "http://dbh-brokerage.mdb-master-test.k8s-core.ebs.crealogix.net",
     "baseSecureMailURL": "http://dbh-securemail.mdb-master-test.k8s-core.ebs.crealogix.net"
 }
