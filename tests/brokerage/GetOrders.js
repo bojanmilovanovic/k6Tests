@@ -3,14 +3,13 @@ import { check, fail } from "k6";
 import http from 'k6/http';
 import {environment} from "../../environments/Environments.js";
 
-console.log(environment);
 const urlBase  	  = JSON.parse(open("../../environments/"+environment)).baseBrokerageURL;
 const tenantID    = JSON.parse(open("../../environments/"+environment)).tenandID;
 const tokenBuilder = new AuthTestToken();
 
 export const options = {
-	vus: 50,
-	duration: "60s"
+	vus: 1,
+	duration: "10s"
 };
 
 export default function() {	

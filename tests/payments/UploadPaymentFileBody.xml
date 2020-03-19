@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  CREALOGIX AG, mfri & mpil generic test file template for ISO20022 pain.001 -->
+<Document xmlns="http://www.six-interbank-clearing.com/de/pain.001.001.03.ch.02.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.six-interbank-clearing.com/de/pain.001.001.03.ch.02.xsd  pain.001.001.03.ch.02.xsd">
+	<CstmrCdtTrfInitn>
+<!-- 
+		A level
+-->		
+		<GrpHdr>
+			<MsgId>111111111</MsgId>
+			<CreDtTm>222222222</CreDtTm>
+			<NbOfTxs>1</NbOfTxs>
+			<CtrlSum>0.01</CtrlSum>
+			<InitgPty>
+				<Nm>Freddy Hinz</Nm>
+			</InitgPty>
+		</GrpHdr>
+<!-- 	
+		B level		
+-->
+		<PmtInf>
+			<PmtInfId>C1813145-B</PmtInfId>
+			<PmtMtd>TRF</PmtMtd>
+			<BtchBookg>true</BtchBookg>
+			<PmtTpInf>
+				<SvcLvl>
+					<Cd>SEPA</Cd>
+				</SvcLvl>
+			</PmtTpInf>
+			<ReqdExctnDt>333333333</ReqdExctnDt>
+			<Dbtr>
+				<Nm>Freddy Hinz</Nm>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<IBAN>444444444</IBAN>
+				</Id>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<ClrSysMmbId>
+						<ClrSysId>
+							<Cd>CHBCC</Cd>
+						</ClrSysId>
+						<MmbId>555555555</MmbId>
+					</ClrSysMmbId>
+				</FinInstnId>
+			</DbtrAgt>
+<!--
+		C level			
+-->		
+			<CdtTrfTxInf>
+				<PmtId>
+					<InstrId>C1813145-C</InstrId>
+					<EndToEndId>666666666</EndToEndId>
+				</PmtId>
+				<Amt>
+					<InstdAmt Ccy="EUR">0.01</InstdAmt>
+				</Amt>
+				<CdtrAgt>
+					<FinInstnId>
+						<BIC>GRKBCH2270A</BIC>
+					</FinInstnId>
+				</CdtrAgt>
+				<Cdtr>
+					<Nm>SEPA TESTCASE</Nm>
+				</Cdtr>
+				<CdtrAcct>
+					<Id>
+						<IBAN>CH1600774012312345678</IBAN>
+					</Id>
+				</CdtrAcct>
+				<RmtInf>
+					<Ustrd>SEPA Test</Ustrd>
+				</RmtInf>
+			</CdtTrfTxInf>
+		</PmtInf>
+	</CstmrCdtTrfInitn>
+</Document>

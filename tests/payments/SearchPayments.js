@@ -10,7 +10,7 @@ var bodyJSON    = JSON.parse(open("SearchPaymentsBody.json"));
 
 export const options = {
 	vus: 5,
-	duration: "60s"
+	duration: "20s"
 };
 
 export default function() {	
