@@ -1,0 +1,12 @@
+{
+    "parameters": [
+      {
+        "name": "string",
+        "state": "ALLOWED"
+      },
+      {
+        "name": "stan",
+        "state": "ALLOWED"
+      }
+    ]
+  }

@@ -1,0 +1,31 @@
+{
+    "key": {
+      "businessDomain": "allegro.pl for Newman tests",
+      "linkName": "link999"
+    },
+    "registrationType": "FREELINK",
+    "settings": {
+      "active": true,
+      "validFrom": "nowDate",
+      "validTo": "futureDate"
+    },
+    "variables": [
+        {
+       "name": "search",
+       "required": true
+     }
+    ],
+    "ports": [
+      {
+        "key": "a1",
+        "matcherType": "DEFAULT",
+        "location": "https://allegro.pl/listing?string={$search}&stan=nowe"
+      },
+      {
+        "key": "e1",
+        "matcherType": "MC",
+        "location": "https://allegro.pl/listing?string={$search}&stan=uzywane"
+      }
+    ]
+  }
+  

@@ -1,0 +1,6 @@
+{
+    "name": "allegro.pl for newman tests",
+    "domainPattern": "999999",
+    "loginRequired": false,
+    "state": "ALLOWED"
+}
